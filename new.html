@@ -17,13 +17,29 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/samplekit.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
   <title>new web page</title>
   <style>
     .text-color{
       color: #ffffff;
     }
-   
-    
+    .circle
+    {
+      border-radius: 50%;
+      border: 1px solid rgb(14, 100, 211);
+      height: 10%;
+      width: 2%;
+      margin: 30px 0px 0px 0px;
+      background-color: #0f7c90;
+    }
+    .circle-sm
+    {
+      align-items: center;
+      border-radius: 50%;
+      margin: 0px 2% 10px 5%;
+      height: 50px;width: 50px;
+    }
   </style>
 </head>
 
@@ -33,7 +49,7 @@
     
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <a href="#"><i style="color: #00b3ad; font-size: xx-large; cursor: pointer;padding-right: 5px;"
-          class="fa fa-gratipay"></i></a>
+        class="fa fa-heart"></i></a>
       <a class="navbar-brand" href="#" style="pointer-events: none;"><b>Raa</b>online</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -116,13 +132,12 @@
             style="cursor: pointer; background-color: #0f7c90;border-radius: 5px;margin: 5px 10px;padding: 10px 10px;color: white;">Explore
             courses</button>
         </div>
-        <div class="col-6">
-
-          <img src="doc.png" style="width: 50%;height: 100%;">
+        <div class="col-6 circle" >
+          <img src="doc.png" style="width: 50%;height: 100%;"></i>
         </div>
       </div>
     </div>
-
+ 
     <!-- Browse categories -->
 
     <h1 style="padding: 0px 0px 20px 0px;">Browse categories</h1>
@@ -204,15 +219,16 @@
         <div style="position: absolute;top:50%;left:50%;transform: translate(-50%,-50%);">
 
           <div style="border: 2px solid #fda434;border-radius: 7px;">
-            <i style="color: white;"><b>Standard</b><span><b
-                  style="margin-left: 30px;color: white;">2,000</b></span></i><button type="button"
+            
+            <i style="color: white;"><span style="color: #fda434;margin: 8px;" class="fa fa-star"></span><b>Standard</b><span><b
+                  style="margin-left: 20px;color: white;"><i class="fas fa-rupee-sign"></i>2,000</b></span></i><button type="button"
               class="btn btn-warning">Subscribe now</button>
           </div>
 
           <div style="margin: 40px 0px 0px 0px ;border:2px solid #55aa29;border-radius: 7px;">
 
-            <i style="color: white;"><span  style="color: #55aa29" class="fa fa-crown"></span><b>premium</b><span><b
-                  style="margin-left: 30px;color: white;">3,500</b></span></i><button type="button"
+            <i style="color: white;"><span  style="color: #55aa29;margin: 8px;" class="fa fa-crown"></span><b>premium</b><span><b
+                  style="margin-left: 20px;color: white;"><i class="fas fa-rupee-sign"></i>3,500</b></span></i><button type="button"
               class="btn btn-success">Subscribe now</button>
           </div>
         </div>
@@ -246,27 +262,30 @@
     </div>
     <!-- doc profile -->
     <div class="container-lg">
-      <div class="row" style="height: 40%;border: 3px solid black;">
-        <div class="col">
-
-
+      <div class="row" style="padding-top:15%;border: 3px solid black;">
+        <div class="col"style="height: 40%;">
+          <img class="circle-sm" src="doc.png">
+          <img class="circle-sm" src="doc.png">
+          <img class="circle-sm" src="doc.png">
+          <img class="circle-sm" src="doc.png">
         </div>
       </div>
     </div>
     <!-- any where learn -->
     <div class="row" style="background-color: #02758a;">
-      <div class="col-6">
+      <div class="col-6" style="margin-bottom: 5% ;">
         <p style="font-size: 50px; color: white;text-align: justify;margin: 100px 0px 0px 60px;"><b>Learn from
             Anywhere</b></p>
         <p style="color: white;text-align: justify;margin-left:60px ;">Lorem ipsum dolor sit amet,consectetur adipiscing
           elit. Facilisis dictum aliquam ut suscipit blandit nibh.Nisi pharetra fermentumlectus fringilla bibendum uma,
           Pharetra mattis.</p><br>
-        <span style="margin-left:10% ;"><button
+        <span style="margin-left:10%;"><button
             style="cursor: pointer;background-color: #0f7c90;border-radius: 5px;margin: 5px 10px;padding: 10px 10px;color: white;">Get
             Started</button></span>
       </div>
       <div class="col-6">
-        <img src="">
+        <img style="border-radius: 50%;height: 5%;width: 5%;text-align: end;" src="class1.jpg">
+        <img style="border-radius: 50%;height: 100%;width: 100%;" src="class2.jpg" alt="">
       </div>
     </div>
     <!-- footer -->
@@ -275,7 +294,7 @@
       <div class="col" style="margin-bottom: 5%;margin-top: 5%;">
         <div>
           <i style="color: #00b3ad; font-size: xx-large; margin-left:150px ;padding-right: 5px;"
-          class="fa fa-gratipay"></i><br>
+          class="fa fa-heart"></i><br>
           <div style="margin: 30px 0px 15px 0px;">
            <a class="text-color" href="#" style="margin: 30px 40px 30px 150px ">Package</a><a class="text-color" style="margin-right: 40px;" href="#">Newsletters</a>
           <a class="text-color" href="#">Contact US</a><br>
